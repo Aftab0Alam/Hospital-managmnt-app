@@ -1,223 +1,231 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  /* Admin Dashboard Container */
-  .admin-dashboard {
-    padding: 20px;
-    background-color: #f5f5f5;
-    min-height: 100vh;
-  }
-  
-  /* Navbar Styling */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 15px 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-  }
-  
-  .navbar h2 {
-    font-size: 24px;
-    font-weight: 600;
-    color: #333;
-  }
-  
-  .navbar button {
-    padding: 10px 15px;
-    background-color: #ff4d4d;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .navbar button:hover {
-    background-color: #e63939;
-  }
-  
-  /* Form Section Styling */
-  .form-section {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-  }
-  
-  .form-section h3 {
-    font-size: 20px;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 15px;
-  }
-  
-  .form-section form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .form-section input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    outline: none;
-    font-size: 16px;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .form-section input:focus {
-    border-color: #6C63FF;
-    box-shadow: 0 0 8px rgba(108, 99, 255, 0.2);
-  }
-  
-  .form-section button {
-    padding: 12px;
-    background-color: #6C63FF;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  
-  .form-section button:hover {
-    background-color: #5a52e0;
-    transform: translateY(-2px);
-  }
-  
-  .form-section button:active {
-    transform: translateY(0);
-  }
-  
-  .form-section button[type="button"] {
-    background-color: #ddd;
-    color: #333;
-  }
-  
-  .form-section button[type="button"]:hover {
-    background-color: #ccc;
-  }
-  
-  /* Hospital List Section Styling */
-  .hospital-list-section {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .hospital-list-section h3 {
-    font-size: 20px;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 15px;
-  }
-  
-  .hospital-list-section p {
-    font-size: 16px;
-    color: #555;
-  }
-  
-  .hospital-list {
-    list-style: none;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Admin Dashboard Container */
+.admin-dashboard {
+  padding: 20px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.navbar h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.navbar button {
+  padding: 10px 15px;
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar button:hover {
+  background-color: #e63939;
+  transform: translateY(-2px);
+}
+
+.navbar button:active {
+  transform: translateY(0);
+}
+
+/* Form Section Styling */
+.form-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.form-section h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-section input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-section input:focus {
+  border-color: #1ABC9C; /* Teal for consistency */
+  box-shadow: 0 0 8px rgba(26, 188, 156, 0.2);
+}
+
+.form-section button {
+  padding: 12px;
+  background-color: #1ABC9C; /* Teal */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form-section button:hover {
+  background-color: #17A589; /* Slightly darker teal */
+  transform: translateY(-2px);
+}
+
+.form-section button:active {
+  transform: translateY(0);
+}
+
+.form-section button[type="button"] {
+  background-color: #ddd;
+  color: #333;
+}
+
+.form-section button[type="button"]:hover {
+  background-color: #ccc;
+}
+
+/* Hospital List Section Styling */
+.hospital-list-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hospital-list-section h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.hospital-list-section p {
+  font-size: 16px;
+  color: #555;
+}
+
+.hospital-list {
+  list-style: none;
+}
+
+.hospital-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hospital-item:hover {
+  background-color: #f9f9f9;
+  transform: translateY(-2px);
+}
+
+.hospital-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.hospital-item div {
+  flex: 1;
+}
+
+.hospital-item strong {
+  font-size: 18px;
+  color: #333;
+}
+
+.hospital-item p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.action-buttons button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.action-buttons button:first-child {
+  background-color: #1ABC9C; /* Teal */
+  color: #fff;
+}
+
+.action-buttons button:first-child:hover {
+  background-color: #17A589; /* Slightly darker teal */
+  transform: translateY(-2px);
+}
+
+.action-buttons button:last-child {
+  background-color: #ff4d4d;
+  color: #fff;
+}
+
+.action-buttons button:last-child:hover {
+  background-color: #e63939;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .hospital-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
-    border-bottom: 1px solid #ddd;
-    transition: background-color 0.3s ease;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
-  .hospital-item:hover {
-    background-color: #f9f9f9;
-  }
-  
+
   .hospital-item img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-right: 20px;
+    margin-bottom: 10px;
   }
-  
-  .hospital-item div {
-    flex: 1;
-  }
-  
-  .hospital-item strong {
-    font-size: 18px;
-    color: #333;
-  }
-  
-  .hospital-item p {
-    font-size: 14px;
-    color: #555;
-    margin: 5px 0;
-  }
-  
+
   .action-buttons {
-    display: flex;
-    gap: 10px;
+    width: 100%;
+    justify-content: flex-end;
   }
-  
-  .action-buttons button {
-    padding: 8px 12px;
-    border: none;
-    border-radius: 6px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .action-buttons button:first-child {
-    background-color: #6C63FF;
-    color: #fff;
-  }
-  
-  .action-buttons button:first-child:hover {
-    background-color: #5a52e0;
-  }
-  
-  .action-buttons button:last-child {
-    background-color: #ff4d4d;
-    color: #fff;
-  }
-  
-  .action-buttons button:last-child:hover {
-    background-color: #e63939;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .hospital-item {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .hospital-item img {
-      margin-bottom: 10px;
-    }
-  
-    .action-buttons {
-      width: 100%;
-      justify-content: flex-end;
-    }
-  }
+}
