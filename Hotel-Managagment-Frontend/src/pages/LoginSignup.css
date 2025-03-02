@@ -1,0 +1,154 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Wrapper Styling */
+  .wrapper {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title Text Styling */
+  .title-text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .title-text .title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .title-text .title.active {
+    color: #6C63FF;
+  }
+  
+  /* Form Container Styling */
+  .form-container {
+    position: relative;
+  }
+  
+  .form-inner {
+    padding: 20px;
+  }
+  
+  .form-inner form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Field Styling */
+  .field {
+    margin-bottom: 20px;
+  }
+  
+  .field input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .field input:focus {
+    border-color: #6C63FF;
+  }
+  
+  /* Button Styling */
+  .field.btn {
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  
+  .btn-layer {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #6C63FF, #FF6B6B);
+    transition: all 0.4s ease;
+  }
+  
+  .field.btn:hover .btn-layer {
+    left: 0;
+  }
+  
+  .field.btn input[type="submit"] {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding: 12px;
+    background: #6C63FF;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .field.btn input[type="submit"]:hover {
+    background: #5a52e0;
+  }
+  
+  /* Signup Link Styling */
+  .signup-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .signup-link button {
+    background: none;
+    border: none;
+    color: #6C63FF;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .signup-link button:hover {
+    color: #5a52e0;
+  }
+  
+  /* Admin Login Styling */
+  .form-inner div {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .form-inner div button {
+    background: none;
+    border: none;
+    color: #6C63FF;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .form-inner div button:hover {
+    color: #5a52e0;
+  }
+  
+  /* Smooth Transitions */
+  input, button, .btn-layer {
+    transition: all 0.3s ease;
+  }

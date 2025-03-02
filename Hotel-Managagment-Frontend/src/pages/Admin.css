@@ -1,0 +1,126 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Form Container Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Field Styling */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #6C63FF;
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.2);
+}
+
+/* Placeholder Styling */
+input::placeholder {
+  color: #999;
+  font-size: 14px;
+}
+
+/* Button Styling */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #6C63FF;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #5a52e0;
+  transform: translateY(-2px);
+}
+
+button[type="submit"]:active {
+  transform: translateY(0);
+}
+
+/* Title Styling */
+.title.login.active {
+  font-size: 28px; /* Large font size for emphasis */
+  font-weight: 600; /* Semi-bold for better readability */
+  color: #6C63FF; /* Primary color for a professional look */
+  text-align: center; /* Center the title */
+  margin-bottom: 20px; /* Space below the title */
+  position: relative; /* For the underline effect */
+  padding-bottom: 10px; /* Space for the underline */
+}
+
+/* Underline Effect */
+.title.login.active::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 60px; /* Length of the underline */
+  height: 3px; /* Thickness of the underline */
+  background-color: #6C63FF; /* Match the title color */
+  transform: translateX(-50%); /* Center the underline */
+  border-radius: 2px; /* Slightly rounded corners */
+}
+
+/* Hover Effect (Optional) */
+.title.login.active:hover {
+  color: #5a52e0; /* Darker shade on hover */
+}
+
+.title.login.active:hover::after {
+  background-color: #5a52e0; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  form {
+    padding: 15px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  button[type="submit"] {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .title.login.active {
+    font-size: 24px; /* Slightly smaller on smaller screens */
+  }
+
+  .title.login.active::after {
+    width: 50px; /* Shorter underline on smaller screens */
+  }
+}
