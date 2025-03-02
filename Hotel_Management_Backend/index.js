@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 1814;
 
 // CORS configuration
 const corsOptions = {
-  origin: "http://localhost:5173", // Replace with your frontend URL (localhost or production domain)
+  origin: "https://alam-hospital-app.netlify.app", // Replace with your frontend URL (localhost or production domain)
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 };
