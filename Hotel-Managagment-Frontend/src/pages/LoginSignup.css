@@ -1,154 +1,176 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  /* Wrapper Styling */
-  .wrapper {
-    max-width: 400px;
-    margin: 80px auto;
-    padding: 20px;
-    background: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Title Text Styling */
-  .title-text {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .title-text .title {
-    font-size: 24px;
-    font-weight: 600;
-    color: #333;
-  }
-  
-  .title-text .title.active {
-    color: #6C63FF;
-  }
-  
-  /* Form Container Styling */
-  .form-container {
-    position: relative;
-  }
-  
-  .form-inner {
-    padding: 20px;
-  }
-  
-  .form-inner form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* Field Styling */
-  .field {
-    margin-bottom: 20px;
-  }
-  
-  .field input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    outline: none;
-    font-size: 16px;
-    transition: border-color 0.3s ease;
-  }
-  
-  .field input:focus {
-    border-color: #6C63FF;
-  }
-  
-  /* Button Styling */
-  .field.btn {
-    position: relative;
-    overflow: hidden;
-    margin-top: 20px;
-  }
-  
-  .btn-layer {
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, #6C63FF, #FF6B6B);
-    transition: all 0.4s ease;
-  }
-  
-  .field.btn:hover .btn-layer {
-    left: 0;
-  }
-  
-  .field.btn input[type="submit"] {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    padding: 12px;
-    background: #6C63FF;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .field.btn input[type="submit"]:hover {
-    background: #5a52e0;
-  }
-  
-  /* Signup Link Styling */
-  .signup-link {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 14px;
-    color: #555;
-  }
-  
-  .signup-link button {
-    background: none;
-    border: none;
-    color: #6C63FF;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-  
-  .signup-link button:hover {
-    color: #5a52e0;
-  }
-  
-  /* Admin Login Styling */
-  .form-inner div {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 14px;
-    color: #555;
-  }
-  
-  .form-inner div button {
-    background: none;
-    border: none;
-    color: #6C63FF;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-  
-  .form-inner div button:hover {
-    color: #5a52e0;
-  }
-  
-  /* Smooth Transitions */
-  input, button, .btn-layer {
-    transition: all 0.3s ease;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Wrapper Styling */
+.wrapper {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Title Text Styling */
+.title-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title-text .title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.title-text .title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 60px;
+  height: 3px;
+  background-color: #1ABC9C; /* Teal for consistency */
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.title-text .title.active {
+  color: #1ABC9C; /* Teal for active state */
+}
+
+/* Form Container Styling */
+.form-container {
+  position: relative;
+}
+
+.form-inner {
+  padding: 20px;
+}
+
+.form-inner form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Field Styling */
+.field {
+  margin-bottom: 20px;
+}
+
+.field input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.field input:focus {
+  border-color: #1ABC9C; /* Teal for focus state */
+  box-shadow: 0 0 8px rgba(26, 188, 156, 0.2);
+}
+
+/* Button Styling */
+.field.btn {
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.btn-layer {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #1ABC9C, #17A589); /* Teal gradient */
+  transition: all 0.4s ease;
+}
+
+.field.btn:hover .btn-layer {
+  left: 0;
+}
+
+.field.btn input[type="submit"] {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 12px;
+  background: #1ABC9C; /* Teal */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.field.btn input[type="submit"]:hover {
+  background: #17A589; /* Slightly darker teal */
+  transform: translateY(-2px);
+}
+
+/* Signup Link Styling */
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.signup-link button {
+  background: none;
+  border: none;
+  color: #1ABC9C; /* Teal */
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.signup-link button:hover {
+  color: #17A589; /* Slightly darker teal */
+}
+
+/* Admin Login Styling */
+.form-inner div {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.form-inner div button {
+  background: none;
+  border: none;
+  color: #1ABC9C; /* Teal */
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.form-inner div button:hover {
+  color: #17A589; /* Slightly darker teal */
+}
+
+/* Smooth Transitions */
+input, button, .btn-layer {
+  transition: all 0.3s ease;
+}
